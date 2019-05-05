@@ -38,7 +38,8 @@
     "node-netrc": "^0.1.0",
     "serve-favicon": "^2.1.7",
     "serve-static": "^1.7.1",
-    "win-fork": "^1.1.1"
+    "win-fork": "^1.1.1",
+    "snyk": "^1.161.1"
   },
   "devDependencies": {
     "@dominicbarnes/eslint-config": "*",
@@ -53,6 +54,9 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "mocha"
-  }
+    "test": "mocha",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
