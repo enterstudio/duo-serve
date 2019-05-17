@@ -1,0 +1,49 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-AXIOS-174505:
+    - duo > duo-test > localtunnel > axios:
+        patched: '2019-05-17T23:26:04.888Z'
+  'npm:debug:20170905':
+    - duo > duo-test > mocha > debug:
+        patched: '2019-05-17T23:26:04.888Z'
+  'npm:hawk:20160119':
+    - duo > duo-test > wd > request > hawk:
+        patched: '2019-05-17T23:26:04.888Z'
+  'npm:hoek:20180212':
+    - duo > duo-test > wd > request > hawk > hoek:
+        patched: '2019-05-17T23:26:04.888Z'
+    - duo > duo-test > wd > request > hawk > boom > hoek:
+        patched: '2019-05-17T23:26:04.888Z'
+    - duo > duo-test > wd > request > hawk > sntp > hoek:
+        patched: '2019-05-17T23:26:04.888Z'
+    - duo > duo-test > wd > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-05-17T23:26:04.888Z'
+  'npm:http-signature:20150122':
+    - duo > duo-test > wd > request > http-signature:
+        patched: '2019-05-17T23:26:04.888Z'
+  'npm:minimatch:20160620':
+    - duo > duo-watch > sane > minimatch:
+        patched: '2019-05-17T23:26:04.888Z'
+    - duo > duo-test > mocha > glob > minimatch:
+        patched: '2019-05-17T23:26:04.888Z'
+    - duo > duo-test > wd > archiver > glob > minimatch:
+        patched: '2019-05-17T23:26:04.888Z'
+    - duo > duo-watch > minimatch:
+        patched: '2019-05-17T23:26:04.888Z'
+  'npm:ms:20151024':
+    - duo > duo-test > co-timeout > ms:
+        patched: '2019-05-17T23:26:04.888Z'
+    - duo > duo-test > mocha > debug > ms:
+        patched: '2019-05-17T23:26:04.888Z'
+  'npm:negotiator:20160616':
+    - duo > duo-test > koa > accepts > negotiator:
+        patched: '2019-05-17T23:26:04.888Z'
+  'npm:request:20160119':
+    - duo > duo-test > wd > request:
+        patched: '2019-05-17T23:26:04.888Z'
+  'npm:tunnel-agent:20170305':
+    - duo > duo-test > wd > request > tunnel-agent:
+        patched: '2019-05-17T23:26:04.888Z'
